@@ -3,17 +3,23 @@ $(window).on('load', function () {
     var filterAktif = '.website';
 
     $('.filters_menu li').click(function () {
+        
         $('.filters_menu li').removeClass('active');
         $(this).addClass('active');
-
         var data = $(this).attr('data-filter');
-        filterAktif = data;
 
+        $(this.dataset['filter']).each(function () {
+
+            this.className = this.className.replace('hdn', '');
+
+        });
+
+        filterAktif = data;
         return iso();
 
     });
 
-    const iso = (function isoF(){
+    const iso = (function isoF() {
 
         $(".wr").isotope({
             itemSelector: ".isoc",
@@ -27,11 +33,11 @@ $(window).on('load', function () {
     }());
 
 
-    $(".gambarDesainGrafis").each(function(){
+    $(".gambarDesainGrafis").each(function () {
 
-        $(this).on('mouseover', function(){
+        $(this).on('mouseover', function () {
 
-            $(this).imageZoom({zoom : 200});
+            $(this).imageZoom({ zoom: 200 });
 
         })
 
@@ -40,6 +46,6 @@ $(window).on('load', function () {
 });
 
 // nice select
-$(document).ready(function() {
+$(document).ready(function () {
     $('select').niceSelect();
-  });
+});
