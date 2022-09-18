@@ -43,6 +43,11 @@ $(window).on('load', function () {
 
     });
 
+    $('.carousel').carousel({
+        interval: 2000,
+        direction : 'right'
+      })
+
 });
 
 // nice select
