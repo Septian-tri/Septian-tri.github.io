@@ -18,18 +18,21 @@
   <link rel="stylesheet" type="text/css" href="asset/css/style.css" />
   <link rel="stylesheet" type="text/css" href="asset/css/responsive.css" />
   <link rel="stylesheet" type="text/css" href="asset/css/image-zoom.css" />
-  <meta property="fb:app_id" content="3092506384318531">',
-  <meta property="og:type" content="website">',
-  <meta property="og:description" content="Portofolio septian triwidian">',
-  <meta property="og:url" content="https://septian-tri.github.io/">',
-  <meta property="og:image" content="https://septian-tri.github.io/asset/images/pp.jpg">',
-  <meta property="og:site_name" content="Septian-portofolio">',
-  <meta property="og:title" content="Portofolio Septian triwidian">'
+  <script src="asset/js/dataPortofolio.js"></script>
+  <script src="asset/js/jquery-3.4.1.min.js"></script>
+  <script src="asset/js/bootstrap.js"></script>
+  <meta property="fb:app_id" content="3092506384318531">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Portofolio septian triwidian">
+  <meta property="og:url" content="https://septian-tri.github.io/">
+  <meta property="og:image" content="https://septian-tri.github.io/asset/images/pp.jpg">
+  <meta property="og:site_name" content="Septian-portofolio">
+  <meta property="og:title" content="Portofolio Septian triwidian">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-xl custom_nav-container p-2 bg-dark shadow">
+    <nav class="navbar navbar-expand-xl custom_nav-container p-2 bg-dark shadow ">
       <a class="navbar-brand" href="index.html">
         <span>Septian Triwidian</span>
       </a>
@@ -64,7 +67,7 @@
     </nav>
   </header>
 
-  <section class="portofolio layout_padding-bottom mt-5">
+  <main class="portofolio">
     <div class="container">
       <div class="heading_container heading_center" id="portofolio">
         <h2>
@@ -73,424 +76,103 @@
       </div>
 
       <ul class="filters_menu">
-        <li class="active" data-filter=".website">Website</li>
-        <li data-filter=".excel">Excel App</li>
-        <li data-filter=".dg">Desain Grafis</li>
+        <li class="active" cnt-bind="website">Website</li>
+        <li cnt-bind="excel">Excel App</li>
+        <li cnt-bind="dg">Desain Grafis</li>
         <li>
-          <a href="https://www.youtube.com/watch?v=NzBj4n_nLac&list=PLybHDCJgk67g6JWVvmbtVRPEL6A-8aFXT" target="_blank"
-            data-filter=".website">
+          <a href="https://www.youtube.com/@SeptianTri" target="_blank">
             Animasi
           </a>
         </li>
       </ul>
 
       <div class="filters-content m-auto">
-        <div class="row wr">
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 website">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/ssBebasnge.link.png');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    Bebasnge.link
-                  </h5>
-                  <p class="m-1">
-                    bebasngelink adalah website yang saya buat untuk menyimpan dan memperpendek alamat url serta alamat
-                    url dapat di custom sesuai ke inginan.
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Frontend</td>
-                      <td>Javascript, css, html.</td>
-                    </tr>
-                    <tr>
-                      <td>Backend</td>
-                      <td>PHP Native.</td>
-                    </tr>
-                    <tr>
-                      <td>Database</td>
-                      <td>Mysql.</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun<br />
-                    email : test@test.aja<br />
-                    sandi : testAkun
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="https://bebasngelink.rf.gd/" target="_blank" class="col btn btn-warning text-white mr-1"
-                      target="_blank">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 website">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/ssAlFattah.png');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    Al-Fattah Online System
-                  </h5>
-                  <p class="m-1">
-                    Al-fattah online system adalah website untuk penilain siswa dan digital raport, saya buat untuk
-                    membatu tugas kuliah teman
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Frontend</td>
-                      <td>Javascript, css, html.</td>
-                    </tr>
-                    <tr>
-                      <td>Backend</td>
-                      <td>PHP Native.</td>
-                    </tr>
-                    <tr>
-                      <td>Database</td>
-                      <td>Mysql.</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun, pilih masuk sebagai admin <br />
-                    email : test@test.aja<br />
-                    sandi : testAkun
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="https://lelah.rf.gd/prtf/paud/logIn" target="_blank"
-                      class="col btn btn-warning text-white mr-1">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 website">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/ssSamudraKreatif.png');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    Online Absensi
-                  </h5>
-                  <p class="m-1">
-                    System absensi online menggunakan QrCode, dapat pantau secara realtime data absen yang masuk, di
-                    buat untuk Pt samudra kreatif studio
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Frontend</td>
-                      <td>Jquery, Javascript, Boostrap, css, html.</td>
-                    </tr>
-                    <tr>
-                      <td>Backend</td>
-                      <td>PHP Native.</td>
-                    </tr>
-                    <tr>
-                      <td>Database</td>
-                      <td>Mysql.</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun<br />
-                    email : test@test.aja<br />
-                    sandi : testAkun
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="https://lelah.rf.gd/prtf/absensiSks/" target="_blank"
-                      class="col btn btn-warning text-white mr-1">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 website">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/vsga.png');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    System Perpus Online
-                  </h5>
-                  <p class="m-1">
-                    System Perpus Online memliki feature cetak kartu angota.System perpus online yang saya buat adalah
-                    tugas akhir dari pelatihan VSGA Digital Talent KOMINFO
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Frontend</td>
-                      <td>Javascript, css, html.</td>
-                    </tr>
-                    <tr>
-                      <td>Backend</td>
-                      <td>PHP Native.</td>
-                    </tr>
-                    <tr>
-                      <td>Database</td>
-                      <td>Mysql.</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun<br />
-                    email : test@test.aja<br />
-                    sandi : testAkun
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="https://lelah.rf.gd/prtf/perpus/" target="_blank"
-                      class="col btn btn-warning text-white mr-1">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 website">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/dicoding.png');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    Submission Dicoding
-                  </h5>
-                  <p class="m-1">
-                    Project ini saya buat untuk memenuhi tugas submission dari dicoding indonesia yang mana biayaan nya
-                    berasal dari kartu prakerja
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Frontend</td>
-                      <td>Javascript, css, html.</td>
-                    </tr>
-                    <tr>
-                      <td>Backend</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <td>Database</td>
-                      <td>-</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun<br />
-                    email : -<br />
-                    sandi : -
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="https://lelah.rf.gd/prtf/dicodingCourse/" target="_blank"
-                      class="col btn btn-warning text-white mr-1">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 excel hdn">
-            <div class="box small shadow">
-              <div>
-                <div class="gambarList" style="background-image:url('asset/images/ssExcel.app.PNG');">
-                </div>
-                <div class="p-2">
-                  <h5>
-                    Schedule System Compare
-                  </h5>
-                  <p class="m-1">
-                    Project ini saya buat atas permintaan hrd saya waktu bekerja di transmart, project ini digunakan
-                    untuk compare jam masuk, libur. berdasarkan finger print dan schedule per divisi. menggunakan sript
-                    VBA
-                  </p>
-                  <table class="m-2 table-sm table-bordered">
-                    <tr>
-                      <td>Script</td>
-                      <td>Visual Basic for Aplication</td>
-                    </tr>
-                    <tr>
-                      <td>Atarmuka</td>
-                      <td>Work Sheet Excel</td>
-                    </tr>
-                  </table>
-                  <small class="text-height-1 text-left">
-                    Gunakan Untuk Test Akun<br />
-                    email : -<br />
-                    sandi : -
-                  </small>
-                  <div class="row mt-2 mb-2 mr-auto ml-auto">
-                    <a href="" class="col btn btn-primary text-white mr-1">
-                      <i class="fa fa-newspaper-o" aria-hidden="true"></i> Detail
-                    </a>
-                    <a href="" class="col btn btn-warning text-white mr-1">
-                      Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 mt-3 mb-3 dg hdn">
-            <figure class="m-auto shadow rounded pt-2 pb-2 fg zoom">
-              <a class="zoom" href="asset/images/ATC.jpg">
-                <img src="asset/images/thumbATC.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-                <figcaption class="figure-caption">Flayer ini saya buat untuk memenuhi persayaratan test melamar digital
-                  marketing</figcaption>
-              </a>
-            </figure>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 dg mt-3 mb-3 hdn">
-            <figure class="m-auto shadow rounded pt-2 pb-2 fg zoom">
-              <a class="zoom" href="asset/images/hasil_akhir.png">
-                <img src="asset/images/thumbhasil_akhir.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-                <figcaption class="figure-caption">Desain Iklan untuk istagram, edisi bantu kerabat</figcaption>
-              </a>
-            </figure>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 dg mt-3 mb-3 hdn">
-            <figure class="m-auto shadow rounded pt-2 pb-2 fg zoom">
-              <a class="zoom" href="asset/images/ds.png">
-                <img src="asset/images/thumbds.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-                <figcaption class="figure-caption">Desain Tiket Natura Pesanan Bu Eti</figcaption>
-              </a>
-            </figure>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 dg mt-3 mb-3 hdn">
-            <figure class="m-auto shadow rounded pt-2 pb-2 fg zoom">
-              <a class="zoom" href="asset/images/llk.png">
-                <img src="asset/images/thumbllk.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-                <figcaption class="figure-caption">Ini lagi Iseng aja terus lagi mood juga buat bikin</figcaption>
-              </a>
-            </figure>
-          </div>
-
-          <div class="isoc col-sm-6 col-lg-4 dg mt-3 mb-3 hdn">
-            <figure class=" m-auto shadow rounded pt-2 pb-2 fg zoom">
-              <a class="zoom" href="asset/images/a.png">
-                <img src="asset/images/thumba.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-                <figcaption class="figure-caption">Desain Spanduk Pesanan Kak Hesti</figcaption>
-              </a>
-            </figure>
-          </div>
-
-        </div>
+        <div class="row wr justify-content-center align-items-center" id="portoMain"></div>
       </div>
     </div>
-  </section>
-
-
-  <section class="container mt-4" id="sertifikasi">
-      <div class="heading_container heading_center" id="sertifikasi">
-        <h2>
-          Sertifikasi
-        </h2>
-      </div>
-      <div class="row w-85 justify-content-center">
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/ANIMATOR_LSP.jpg">
-            <img src="asset/images/animThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi LSP Motion Graphic 2D, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Intermmediate Animator
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/sertfikat_web.png">
-            <img src="asset/images/webThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi LSP Junior Web Devloper, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Junior Web Devloper
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/CASHIER_LSP.jpeg">
-            <img src="asset/images/cashierThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi LSP Cashier, Hasil test Kompentensi saat bekerja sebagai cashier Pt Trans Retail Indonesia (Carrefour)
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/ANIMATOR_S_PNJ.jpeg">
-            <img src="asset/images/animThumbCer2.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi Motion Graphic 2D Universitas PNJ, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Intermmediate Animator
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/dicoding_(2).png">
-            <img src="asset/images/webThumbCer2.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi Dicoding Dasar Pemrograman Web, Hasil Pelatihan Course Dicoding Melalui Pembiayaan prakerja tahun 2020
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="m-4 shadow rounded p-2 fg zoom">
-          <a class="zoom" href="asset/images/02114745121-67_Septian Triwidianto Putra_2_Page_1.jpg">
-            <img src="asset/images/webThumbCer3.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
-            <figcaption class="mt-2 figure-caption">
-              Sertifikasi Universitas Telkom Junior Web Devloper, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Junior Web Devloper
-            </figcaption>
-          </a>
-        </figure>
-      </div>
-  </section>
-
-  <section class="about_section pt-5 pb-5">
-    <div class="container">
-      <div class="row justify-content-center text-center" id="tentang">
-        <div class="col m-auto">
-          <img src="asset/images/pp.jpg" class="rounded m-auto" alt="Gambar Tidak Dapat Tampil" />
+    <section class="container mt-4" id="sertifikasi">
+        <div class="heading_container heading_center" id="sertifikasi">
+          <h2>
+            Sertifikasi
+          </h2>
         </div>
-        <div class="col">
-          <div class="detail-box">
-            <h2>
-              Septian Triwidianto
-            </h2>
-            <p class="text-justify">
-              Seseorang yang memiliki rasa ingin tahu yang tinggi terhadap hal baru terutama dalam dunia
-              digital. Cepat mempelajari hal baru dalam
-              bidang tertentu. Memiliki sifat rendah hati,
-              Bertanggung Jawab dan Juga seseorang yang mudah Panik , Serta sedikit pelupa
-            </p>
+        <div class="row w-85 justify-content-center">
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/ANIMATOR_LSP.jpg">
+              <img src="asset/images/animThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi LSP Motion Graphic 2D, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Intermmediate Animator
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/sertfikat_web.png">
+              <img src="asset/images/webThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi LSP Junior Web Devloper, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Junior Web Devloper
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/CASHIER_LSP.jpeg">
+              <img src="asset/images/cashierThumbCer1.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi LSP Cashier, Hasil test Kompentensi saat bekerja sebagai cashier Pt Trans Retail Indonesia (Carrefour)
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/ANIMATOR_S_PNJ.jpeg">
+              <img src="asset/images/animThumbCer2.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi Motion Graphic 2D Universitas PNJ, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Intermmediate Animator
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/dicoding_(2).png">
+              <img src="asset/images/webThumbCer2.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi Dicoding Dasar Pemrograman Web, Hasil Pelatihan Course Dicoding Melalui Pembiayaan prakerja tahun 2020
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/02114745121-67_Septian Triwidianto Putra_2_Page_1.jpg">
+              <img src="asset/images/webThumbCer3.PNG" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi Universitas Telkom Junior Web Devloper, Hasil Pelatihan dari VSGA Digital Talent Kominfo Tema Junior Web Devloper
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+    </section>
+  
+    <section class="about_section pt-5 pb-5">
+      <div class="container">
+        <div class="row justify-content-center text-center" id="tentang">
+          <div class="col m-auto">
+            <img src="asset/images/pp.jpg" class="rounded m-auto prf" alt="Gambar Tidak Dapat Tampil" />
+          </div>
+          <div class="col">
+            <div class="detail-box">
+              <h2>
+                Septian Triwidianto
+              </h2>
+              <p class="text-justify">
+                Seseorang yang memiliki rasa ingin tahu yang tinggi terhadap hal baru terutama dalam dunia
+                digital. Cepat mempelajari hal baru dalam
+                bidang tertentu. Memiliki sifat rendah hati,
+                Bertanggung Jawab dan Juga seseorang yang mudah Panik , Serta sedikit pelupa
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+
+
 
   <footer class="footer_section">
     <div class="container" id="knkt">
@@ -548,13 +230,9 @@
       </div>
     </div>
   </footer>
-  <script src="asset/js/jquery-3.4.1.min.js"></script>
-  <script src="asset/js/bootstrap.js"></script>
-  <script src="asset/js/isotope.pkgd.min.js"></script>
   <script src="asset/js/jquery.nice-select.min.js"></script>
   <script src="asset/js/zoom.js"></script>
   <script src="asset/js/custom.js"></script>
-
 </body>
 
 </html>
