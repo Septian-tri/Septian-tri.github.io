@@ -283,99 +283,99 @@ window.onload = function(e){
                             '</a>'+
                             '</figure>';
                             
-                    }else{  
+                }else{  
 
-                        var objBtnColl   = document.createElement('button');
-                        var tempMaterial = "";
-                        var tempTestAkun = "";
+                    var objBtnColl   = document.createElement('button');
+                    var tempMaterial = "";
+                    var tempTestAkun = "";
 
-                        objCntPorto.className     = 'col-sm-6 col-lg-4 mt-3 mb-3 wrapperPorto '+ typePorto +' containerCol' + i;
-                        objBtnColl.className      = "btn btn-block p-1";
-                        objBtnColl.type           = "button";
-                        objBtnColl.setAttribute('data-col', 'collapse' + i);
-                        objBtnColl.setAttribute('data-parent', 'containerCol' + i);
-                        objBtnColl.innerHTML      = 'Detail Portofolio';
-    
-                        objKeyMaterial.forEach(function(a, b, c){
-                            
-                            if(material[a].match(/^\s*$/) === null){
+                    objCntPorto.className     = 'col-sm-6 col-lg-4 mt-3 mb-3 wrapperPorto '+ typePorto +' containerCol' + i;
+                    objBtnColl.className      = "btn btn-block p-1";
+                    objBtnColl.type           = "button";
+                    objBtnColl.setAttribute('data-col', 'collapse' + i);
+                    objBtnColl.setAttribute('data-parent', 'containerCol' + i);
+                    objBtnColl.innerHTML      = 'Detail Portofolio';
 
-                                tempMaterial += 
-                                '<tr>'+
-                                    '<td>'+ a +'</td>'+
-                                    '<td>'+ material[a] +'</td>'+
-                                '</tr>';
+                    objKeyMaterial.forEach(function(a, b, c){
+                        
+                        if(material[a].match(/^\s*$/) === null){
 
-                            }
-    
-                        });
-    
-                        objKeyTestAkun.forEach(function(a, b, c){
-                            
-                            tempTestAkun +=
+                            tempMaterial += 
                             '<tr>'+
-                                '<td>' + testAkun[a]['peranAkun'] + '</td>'+
-                                '<td>' + testAkun[a]['idAkun'] + '</td>'+
-                                '<td>' + testAkun[a]['sandiAkun'] + '</td>'+
+                                '<td>'+ a +'</td>'+
+                                '<td>'+ material[a] +'</td>'+
                             '</tr>';
 
-                        });
-    
-                        objCntPorto.innerHTML =
-                        '<div class="box small shadow">'+
-                            '<div class="gambarList" style="background-image:url(\'asset/images/'+ thumbnail +'\');"></div>'+
-                            '<div class="p-2">'+
-                                '<h5>'+ namaPorto +'</h5>'+
-                                '<p class="m-1">' + deskripsiPorto + '</p>'+
-                            '</div>'+
-                            '<div class="accordion m-1" id="infAkun'+i+'">'+
-                                '<div class="card rounded">'+
-                                    '<div class="card-header p-1 head'+ i +'" id="head'+i+'"></div>'+
-                                    '<div id="collapse'+i+'" class="accordion-collapse collapse collapse'+i+'" aria-labelledby="head'+i+'" data-parent="#infAkun'+i+'">'+
-                                        '<div class="card-body p-1 text-muted overflow-auto">'+
-                                            'Material Portofolio'+
-                                            '<table class="m-2 table-sm table-bordered">'+
-                                                '<tbody>'+
-                                                    tempMaterial+
-                                                '</tbody>'+
-                                            '</table>'+
-                                            'Akun Untuk Test'+
-                                            '<table class="m-2 table-sm table-bordered">'+
-                                                '<tbody>'+
-                                                    '<tr>'+
-                                                        '<td>Peran Akun</td>'+
-                                                        '<td>ID / EMAIL</td>'+
-                                                        '<td>Sandi</td>'+
-                                                    '</tr>'+
-                                                    tempTestAkun+
-                                                '</tbody>'+
-                                            '</table>'+
-                                        '</div>'+
+                        }
+
+                    });
+
+                    objKeyTestAkun.forEach(function(a, b, c){
+                        
+                        tempTestAkun +=
+                        '<tr>'+
+                            '<td>' + testAkun[a]['peranAkun'] + '</td>'+
+                            '<td>' + testAkun[a]['idAkun'] + '</td>'+
+                            '<td>' + testAkun[a]['sandiAkun'] + '</td>'+
+                        '</tr>';
+
+                    });
+
+                    objCntPorto.innerHTML =
+                    '<div class="box small shadow">'+
+                        '<div class="gambarList" style="background-image:url(\'asset/images/'+ thumbnail +'\');"></div>'+
+                        '<div class="p-2">'+
+                            '<h5>'+ namaPorto +'</h5>'+
+                            '<p class="m-1">' + deskripsiPorto + '</p>'+
+                        '</div>'+
+                        '<div class="accordion m-1" id="infAkun'+i+'">'+
+                            '<div class="card rounded">'+
+                                '<div class="card-header p-1 head'+ i +'" id="head'+i+'"></div>'+
+                                '<div id="collapse'+i+'" class="accordion-collapse collapse collapse'+i+'" aria-labelledby="head'+i+'" data-parent="#infAkun'+i+'">'+
+                                    '<div class="card-body p-1 text-muted overflow-auto">'+
+                                        'Material Portofolio'+
+                                        '<table class="m-2 table-sm table-bordered">'+
+                                            '<tbody>'+
+                                                tempMaterial+
+                                            '</tbody>'+
+                                        '</table>'+
+                                        'Akun Untuk Test'+
+                                        '<table class="m-2 table-sm table-bordered">'+
+                                            '<tbody>'+
+                                                '<tr>'+
+                                                    '<td>Peran Akun</td>'+
+                                                    '<td>ID / EMAIL</td>'+
+                                                    '<td>Sandi</td>'+
+                                                '</tr>'+
+                                                tempTestAkun+
+                                            '</tbody>'+
+                                        '</table>'+
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
-                            '<div class="row m-2 d-flex justify-content-center">'+
-                                '<a href="'+ alamatUrl['url1'] +'" target="_blank" class="col btn btn-warning text-white m-1">'+
-                                    'Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>'+
-                                '</a>'+
-                            '</div>'+
-                        '</div>';
-    
-                        objCntPorto.getElementsByClassName('head'+i)[0].appendChild(objBtnColl);
-                        
-                        objBtnColl.onclick = function(e){
-                            e.stopImmediatePropagation();
-                            e.stopPropagation();
-    
-                            var attrib      = this.attributes;
-                            var objParent   = objCntPorto.parentNode.getElementsByClassName(attrib['data-parent'].value)[0];
-                            var objCol      = objParent.getElementsByClassName(attrib['data-col'].value)[0];
-                            
-                            return new bootstrap.Collapse(objCol);
-                        }
-                    }
+                        '</div>'+
+                        '<div class="row m-2 d-flex justify-content-center">'+
+                            '<a href="'+ alamatUrl['url1'] +'" target="_blank" class="col btn btn-warning text-white m-1">'+
+                                'Kunjungi <i class="fa fa-external-link" aria-hidden="true"></i>'+
+                            '</a>'+
+                        '</div>'+
+                    '</div>';
+
+                    objCntPorto.getElementsByClassName('head'+i)[0].appendChild(objBtnColl);
                     
-                    mainBoxPorto.appendChild(objCntPorto);
+                    objBtnColl.onclick = function(e){
+                        e.stopImmediatePropagation();
+                        e.stopPropagation();
+
+                        var attrib      = this.attributes;
+                        var objParent   = objCntPorto.parentNode.getElementsByClassName(attrib['data-parent'].value)[0];
+                        var objCol      = objParent.getElementsByClassName(attrib['data-col'].value)[0];
+                        
+                        return new bootstrap.Collapse(objCol);
+                    }
+                }
+                    
+                mainBoxPorto.appendChild(objCntPorto);
             }
         
         }
