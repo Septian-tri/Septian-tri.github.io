@@ -47,7 +47,7 @@ window.onload = function(e){
                     }
                 },
                 'alamatUrl' : {
-                    'url1' : 'https://lelah.rf.gd/prtf/paud/logIn'
+                    'url1' : 'https://lelah.rf.gd/paud/logIn'
                 },
                 'thumbnail' : 'ssAlFattah.png'
             },
@@ -70,7 +70,7 @@ window.onload = function(e){
                     }
                 },
                 'alamatUrl' : {
-                    'url1' : 'https://lelah.rf.gd/prtf/absensiSks/'
+                    'url1' : 'https://lelah.rf.gd/absensiSks/'
                 },
                 'thumbnail' : 'ssSamudraKreatif.png'
             },
@@ -99,7 +99,7 @@ window.onload = function(e){
                     }
                 },
                 'alamatUrl' : {
-                    'url1' : 'https://lelah.rf.gd/prtf/simpleAppResto/'
+                    'url1' : 'https://lelah.rf.gd/simpleAppResto/'
                 },
                 'thumbnail' : 'ssSimpleResto.png'
             },
@@ -122,7 +122,7 @@ window.onload = function(e){
                     }
                 },
                 'alamatUrl' : {
-                    'url1' : 'https://lelah.rf.gd/prtf/perpus/'
+                    'url1' : 'https://lelah.rf.gd/perpus/'
                 },
                 'thumbnail' : 'vsga.png'
             },
@@ -141,7 +141,7 @@ window.onload = function(e){
                     }
                 },
                 'alamatUrl' : {
-                    'url1' : 'https://lelah.rf.gd/prtf/dicodingCourse/'
+                    'url1' : 'https://lelah.rf.gd/dicodingCourse/'
                 },
                 'thumbnail' : 'dicoding.png'
             },
