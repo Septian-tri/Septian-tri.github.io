@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://hasilberpikir.000webhost.com">
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -145,6 +146,22 @@
               </figcaption>
             </a>
           </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/alaways_ngoding_js.png">
+              <img src="asset/images/thumbAlwaysNgoding.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi Belajar JS Always Ngoding
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="m-4 shadow rounded p-2 fg zoom">
+            <a class="zoom" href="asset/images/always_ngoding_html.png">
+              <img src="asset/images/thumbAlwaysNgoding.png" class="gambarDesainGrafis rounded" alt="Gambar gagal di muat">
+              <figcaption class="mt-2 figure-caption">
+                Sertifikasi Belajar HTML Always Ngoding
+              </figcaption>
+            </a>
+          </figure>
         </div>
     </section>
   
@@ -233,6 +250,19 @@
   <script src="asset/js/jquery.nice-select.min.js"></script>
   <script src="asset/js/zoom.js"></script>
   <script src="asset/js/custom.js"></script>
+  <script>
+    console.clear();
+    var a = new XMLHttpRequest();
+    a.open('GET', 'https://hasilberpikir.000webhostapp.com/');
+    a.setRequestHeader('content-type', 'application/json');
+    a.onerror = function(e){
+      return console.log(this)
+    }
+    a.onload = function(e){
+      return console.log(this);
+    }
+    a.send(JSON.stringify({"Asdsad":"asdsadsad"}));
+  </script>
 </body>
 
 </html>
