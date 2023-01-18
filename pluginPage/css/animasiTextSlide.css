@@ -1,0 +1,168 @@
+/* *
+ * 
+ * Orginal Created And Design By Septian
+ * V 1.0
+ * septiantriwidian@gmail.com
+ * 
+ * https://github.com/septian-tri/animasiTextSlide
+ * 
+ */
+
+body {
+    margin: 0;
+    font-family: 'verdana';
+ }
+
+ /* Pengturan container animasi */
+
+.cnt1, .cnt2{ 
+    height: 0px;
+    width: auto;
+    display: inline-block;
+}
+
+.cnt1{
+    color: #ffbf00;
+}
+
+.cnt2{
+    color: #0fe8e8;
+}
+
+.cnt3, .cnt4{
+    height: 40px;
+    font-size: 20px;
+    color: #f471ff;
+}
+
+.cnt4 .textAnimasi:nth-child(1){
+    color: #ffbf00;
+}
+
+.cnt4 .textAnimasi:nth-child(2){
+    color: #00ff99;
+}
+
+.cnt4 .textAnimasi:nth-child(3){
+    color: #ff008f;
+}
+
+/**
+    Styling Cnt 4
+*/
+
+.cnt5{
+    height: 250px;
+}
+
+.cnt5 .textAnimasi{
+    color: #ffffff;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.cnt5 .bgIm1{
+    background-image: url('../images/exampleImageBg1.jpg');
+    text-align: left;
+}
+
+.cnt5 .bgIm2{
+    background-image: url('../images/exampleImageBg2.jpg');
+}
+
+.cnt5 .bgIm3{
+    background-image: url('../images/exampleImageBg3.jpg');
+    text-align: right;
+}
+
+.cnt5 .bgIm4{
+    background-image: url('../images/exampleImageBg4.jpg');
+}
+
+/**
+    Styling Cnt 4
+*/
+
+
+
+/**
+    Styling Cnt 6
+*/
+
+.cnt6{
+    width: auto;
+    display: block;
+    height: 50px;
+    background: none;
+    background: unset;
+    margin: 5px auto;
+    text-align: center;
+    word-break: break-word;
+}
+
+.textAnimasiWarna1{
+    background: linear-gradient(135deg, #FFF6B7 0%, #F6416C 100%);
+}
+
+.textAnimasiWarna2{
+    background: linear-gradient(135deg, #ABDCFF 0%, #0396FF 100%);
+}
+
+.textAnimasiWarna3{
+    background: linear-gradient(135deg, #FFF3B0 0%, #CA26FF 100%);
+}
+
+.textAnimasiWarna4{
+    background: linear-gradient(135deg, #FFF3B0 0%, #CA26FF 100%);
+}
+
+.textAnimasiWarna5{
+    background: linear-gradient(135deg, #2AFADF 0%, #4C83FF 100%);
+}
+
+.textAnimasiWarna6{
+    background: linear-gradient(135deg, #FFF720 0%, #3CD500 100%);
+}
+
+.textAnimasiWarna7{
+    background: linear-gradient(135deg, #3C8CE7 0%, #00EAFF 100%);
+}
+
+.textAnimasiWarna8{
+    background: linear-gradient(135deg, #FFF886 0%, #F072B6 100%);
+}
+
+.textAnimasiWarna9{
+    background: linear-gradient(135deg, #2AFADF 0%, #4C83FF 100%);
+}
+
+.textWebKit{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/**
+    Styling Cnt 6
+*/
+
+
+/* Pengturan container animasi */
+
+
+.cTextContoh{
+    margin: 25px auto;
+    text-align: justify;
+    padding: 10px;
+    background-color: #021022;
+    border-radius: 5px;
+    width: 90%;
+    color: white;
+    font-size: 15px;
+}
